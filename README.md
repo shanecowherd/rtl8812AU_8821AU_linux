@@ -8,6 +8,19 @@ make
 sudo make install
 sudo modprobe 8812au
 ```
+Release network connections
+Just to be sure it's not being used, bring your interface down, release your DHCP connection and then put it back up:
+```sh
+sudo ip link set dev [wifi interface] down
+sudo dhclient -r [wifi interface]
+sudo ip link set dev [wifi interface] up
+```
+Many of these commands require superuser priviledges (i.e. root access), so the sudo command precedes them. Of course, you could always use "sudo -s" or some other method to login to a shell as the root account, but why complicate matters?
+
+Scan for open networks
+```sh
+sudo iwlist [wifi interface] scan
+```
 
 
 # rtl8812AU_8821AU_linux
