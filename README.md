@@ -1,3 +1,15 @@
+# Ubuntu 15.04
+
+```sh
+sudo apt-get install linux-headers-generic build-essential git
+git clone https://github.com/abperiasamy/rtl8812AU_8821AU_linux.git
+cd rtl8812AU_8821AU_linux
+make
+sudo make install
+sudo modprobe 8812au
+```
+
+
 # rtl8812AU_8821AU_linux
 
 rtl8812AU_8821AU linux kernel driver for AC1200 (801.11ac) Wireless Dual-Band USB Adapter
