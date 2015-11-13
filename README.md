@@ -2,7 +2,7 @@
 
 ```sh
 sudo apt-get install linux-headers-$(uname -r) build-essential git
-git clone https://github.com/abperiasamy/rtl8812AU_8821AU_linux.git
+git clone https://github.com/shanecowherd/rtl8812AU_8821AU_linux.git
 cd rtl8812AU_8821AU_linux
 make
 sudo make install
